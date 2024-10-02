@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\던전에서 여행을 해볼까">
+      <UniqueIdentifier>{50d6f623-6cd4-42fa-b08b-bfbaaf1f8bae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConsolCharacter.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerClass.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLoby.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="DunClass.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterClass.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleClass.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemInventory.cpp">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConsolCharacter.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerClass.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="DunClass.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterClass.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleClass.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemInventory.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemMenu.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="PotionClass.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>소스 파일\던전에서 여행을 해볼까</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
