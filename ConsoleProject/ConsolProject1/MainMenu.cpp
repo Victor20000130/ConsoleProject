@@ -46,7 +46,7 @@ void MainMenu::StartMessage()
 {
 	while (true)
 	{
-		system("mode con: cols=60 lines=31");
+		system("mode con: cols=60 lines=31 | title 던전에서 여행을 해볼까");
 		ViewTemplete();
 		gotoxy(23, 4); cout << "모험가의 여행";
 		gotoxy(20, 22); cout << "게임 시작 - 1 입력";

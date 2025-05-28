@@ -33,5 +33,6 @@ public:
 	void Respawn(const string& temp);
 	int Stage(DunClass& map, class BattleClass& B, class PlayerClass& p, const int stagecount);
 	void StoneStatue(class PlayerClass& p);
+	int ReturnValue(string temp);
 };
 

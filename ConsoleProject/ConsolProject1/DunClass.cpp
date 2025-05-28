@@ -191,7 +191,7 @@ void DunClass::StoneStatue(class PlayerClass& player)
 	while (true)
 	{
 	int choice;
-	int money;
+	int money = 0;
 	cout << "석상에게 공물을 바치겠습니까?" << endl;
 	cout << "바친다 - 1 입력" << endl;
 	cout << "돌아간다 - 2 입력" << endl;
@@ -205,10 +205,18 @@ void DunClass::StoneStatue(class PlayerClass& player)
 		cout << "보유 골드 : " << player.GetMoney() << endl;
 		cout << "얼마를 바치겠습니까?" << endl;
 		cout << "돌아가기 - 0" << endl;
+		cin.clear(money);
 		cin >> money;
 		if (money == 0)
 		{
 			return;
+		}
+		if (money > player.GetMoney())
+		{
+			cout << "돈이 부족하다..." << endl;
+			Sleep(1000);
+			system("cls");
+			continue;
 		}
 		if (money < 100)
 		{
@@ -219,14 +227,7 @@ void DunClass::StoneStatue(class PlayerClass& player)
 			cout << "공물이 부족한가..?" << endl;
 			Sleep(1000);
 			system("cls");
-			continue;
-		}
-		if (money > player.GetMoney())
-		{
-			cout << "돈이 부족하다..." << endl;
-			cin.clear(money);
-			Sleep(1000);
-			system("cls");
+
 			continue;
 		}
 		else if (money < player.GetMoney())
@@ -326,20 +327,7 @@ int DunClass::MoveUp(DunClass& map)
 			break;
 		}
 	}
-	if (temp == dungeon)
-	{
-		delete[] tile;
-		return 1;
-	}
-	else if (temp == monster)
-	{
-		return 2;
-	}
-	else if (temp == statue)
-	{
-		return 3;
-	}
-	return 0;
+	return ReturnValue(temp);
 }
 
 int DunClass::MoveDown(DunClass& map)
@@ -359,20 +347,7 @@ int DunClass::MoveDown(DunClass& map)
 			break;
 		}
 	}
-	if (temp == dungeon)
-	{
-		delete[] tile;
-		return 1;
-	}
-	else if (temp == monster)
-	{
-		return 2;
-	}
-	else if (temp == statue)
-	{
-		return 3;
-	}
-	return 0;
+	return ReturnValue(temp);
 }
 
 int DunClass::MoveRight(DunClass& map)
@@ -392,20 +367,7 @@ int DunClass::MoveRight(DunClass& map)
 			break;
 		}
 	}
-	if (temp == dungeon)
-	{
-		delete[] tile;
-		return 1;
-	}
-	else if (temp == monster)
-	{
-		return 2;
-	}
-	else if (temp == statue)
-	{
-		return 3;
-	}
-	return 0;
+	return ReturnValue(temp);
 }
 
 int DunClass::MoveLeft(DunClass& map)
@@ -425,6 +387,13 @@ int DunClass::MoveLeft(DunClass& map)
 			break;
 		}
 	} 
+
+	return ReturnValue(temp);
+}
+
+
+int DunClass::ReturnValue(string temp)
+{
 	if (temp == dungeon)
 	{
 		delete[] tile;
@@ -440,5 +409,4 @@ int DunClass::MoveLeft(DunClass& map)
 	}
 	return 0;
 }
-
 
